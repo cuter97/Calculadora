@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 0px) and (max-width: 480px){
+        margin: 0px;
+    }
+}
+
+.calculadora{
+    width: 100%;
+    max-width: 435px;
+    @media screen and (min-width: 0px) and (max-width: 480px){
+        width: 330px;
+    }
+}
+
+/* operadores y digitos */
+.grid-digitos{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,64px);
+    direction: rtl;
+    gap: 10px;
+    
+    @media screen and (min-width: 0px) and (max-width: 480px){
+        grid-template-columns: repeat(3,70px);
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 'num num num del'
+    'num num num mas'
+    'num num num men'
+    'pun cero div por'
+    'res res igual igual';
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,64px);
+    gap: 10px;    
+    
+    @media screen and (min-width: 0px) and (max-width: 480px){
+        grid-template-columns: repeat(3,70px); 
+    }
+}
+
+.grid-num{grid-area:num;}
+.grid-del{grid-area:del; width: 100px;}
+.grid-mas{grid-area:mas;}
+.grid-menos{grid-area:men;}
+.grid-multi{grid-area:por;}
+.grid-div{grid-area:div;}
+.grid-cero{grid-area:cero;}
+.grid-punto{grid-area:pun; height: 65px;}
+.grid-igual{grid-area:igual; height: 65px;}
+.grid-res{grid-area:res;}
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .grid-del{grid-area:del; width: 70px;}
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 30px;
+    
+}
+
+.boton-contenedor{
+    width:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
