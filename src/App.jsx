@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import './style.scss'
 import Boton from "./components/Boton"
 import {ThemeProvider} from "styled-components"
@@ -6,12 +6,18 @@ import { darkBlue, lightGray, violet } from "./theme"
 import { GlobalStyles } from "./components/GlobalTheme"
 import { Display, Botones, Signos, Clear, Igual, Title, ThemeTitle } from "./components/Calculator.styled"
 
+const storage = JSON.parse(localStorage.getItem('theme'))
+
 function App() {
 
   const themes = {darkBlue, lightGray, violet}
 
   const [disp, setDisp] = useState("")
-  const [theme, setTheme] = useState(themes["darkBlue"])
+  const [theme, setTheme] = useState(storage || themes["darkBlue"])
+
+  useEffect(()=> {
+    localStorage.setItem('theme', JSON.stringify(theme))
+  }, [theme])
 
   const mostrarDisp = (value) => {
     setDisp(disp + value)
