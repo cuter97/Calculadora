@@ -1,25 +1,25 @@
 export const darkBlue ={
     name:"darkBlue",
     // Body, keypad background, and screen background
-    mainbg:"hsl(222, 26%, 31%)",
-    keypadbg:"hsl(223, 31%, 20%)",
-    screenbg:"hsl(224, 36%, 15%)",
+    bg:"hsl(222, 26%, 31%)", //mainbg
+    botonbg:"hsl(223, 31%, 20%)", //keypadbg hsl(223, 31%, 20%)
+    display:"hsl(224, 36%, 15%)", //screenbg
     
     /*define key background and shadow color*/
     // Desaturated dark blue
-    keyone:"hsl(225, 21%, 49%)",
-    keyoneshadow:"hsl(224, 28%, 35%)",
-    keyonehover:"#FFFFFE",
+    keyone:"hsl(225, 21%, 49%)", //keyone
+    keyoneshadow:"hsl(224, 28%, 35%)", //keyoneshadow
+    keyonehover:"#FFFFFE", // keyonehover
   
     // Red
-    keytwo:"hsl(6, 63%, 50%)",
-    keytwoshadow:"hsl(6, 70%, 34%)",
-    keytwohover:"#F96B5B",
+    keytwo:"hsl(6, 63%, 50%)", // keytwo
+    keytwoshadow:"hsl(6, 70%, 34%)", //keytwoshadow 
+    keytwohover:"#F96B5B",//keytwohover
   
     // orange
-    keythree:"hsl(30, 25%, 89%)",
-    keythreeshadow:"hsl(28, 16%, 65%)",
-    keythreehover:"#A2B2E1",
+    keythree:"hsl(30, 25%, 89%)",//keythree
+    keythreeshadow:"hsl(28, 16%, 65%)",//keythreeshadow
+    keythreehover:"#A2B2E1",//keythreehover
     // key colors end
   
     // text colors
@@ -31,9 +31,9 @@ export const darkBlue ={
   export const lightGray = {
     name:"lightGray",
     // Body, keypad background, and screen background
-    mainbg:"hsl(0, 0%, 90%)",
-    keypadbg:"hsl(0, 5%, 81%)",
-    screenbg:"hsl(0, 0%, 93%)",
+    bg:"hsl(0, 0%, 90%)",
+    botonbg:"hsl(0, 5%, 81%)",
+    display:"hsl(0, 0%, 93%)",
     
     /*define key background and shadow*/
     // Cyan
@@ -61,9 +61,9 @@ export const darkBlue ={
   export const violet ={
     name:"violet",
     // Body, keypad background, and screen background
-    mainbg:"hsl(268, 75%, 9%)",
-    keypadbg:"hsl(268, 71%, 12%)",
-    screenbg:"hsl(268, 71%, 12%)",
+    bg:"hsl(268, 75%, 9%)",
+    botonbg:"hsl(268, 71%, 12%)",
+    display:"hsl(268, 71%, 12%)",
     
     /*define key background and shadow*/
     // violet nd magenta

@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
-        background-color:${props => props.theme.mainbg};
+        background-color:${props => props.theme.bg};
         font-family: 'Spartan', sans-serif;
     }
 `;

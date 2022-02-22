@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Display = styled.div`
     
     text-align:right;
-    background-color: ${props => props.theme.screenbg};
+    background-color: ${props => props.theme.display};
     color: ${props => props.theme.texttitle};
     padding:30px;
     border-radius:1rem;

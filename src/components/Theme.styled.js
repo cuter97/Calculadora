@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.keypadbg};
+    background-color: ${props => props.theme.botonbg};
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,7 +26,7 @@ export const Label = styled.label`
         width:16px;
         height:16px;
         border-radius: 50%;
-        background-color:${props => props.value === props.theme.name ? props.theme.keytwo : props.theme.mainbg};
+        background-color:${props => props.value === props.theme.name ? props.theme.keytwo : props.theme.bg};
     }
     &:hover::after{
         background-color:${props => props.theme.keytwohover};
